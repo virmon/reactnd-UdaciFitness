@@ -97,7 +97,7 @@ class AddEntry extends Component {
             return (
                 <View style={styles.center}>
                     <Ionicons 
-                        name={Platform.OS === 'ios' ? 'ios-happy-outline' : 'md-happy'}
+                        name={Platform.OS === 'ios' ? 'ios-happy' : 'md-happy'}
                         size={100}
                     />
                     <Text>You already logged your information for today</Text>
