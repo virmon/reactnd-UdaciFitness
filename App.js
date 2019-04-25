@@ -15,6 +15,7 @@ import { purple, white } from './utils/colors'
 import { Fontawesome, Ionicons } from '@expo/vector-icons'
 import { Constants } from 'expo'
 import EntryDetail from './components/EntryDetail'
+import Live from './components/Live'
 
 function UdaciStatusBar ({ backgroundColor, ...props }) {
   return (
@@ -41,6 +42,13 @@ const tabs = {
       tabBarIcon: ({ tintColor }) => <Fontawesome name='plus-square' size={30} color={tintColor} />
     },
   },
+  Live: {
+    screen: Live,
+    navigationOptions: {
+      tabBarLabel: 'Live',
+      tabBarIcon: ({ tintColor }) => <Ionicons name='ios-dashboard' size={30} color={tintColor} />
+    }
+  }
 }
 
 const options = {
